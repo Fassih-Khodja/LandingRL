@@ -192,8 +192,3 @@ runs/dqn-v1/         logs and checkpoints of the run reported here
 `lander` never imports `ui` or `dqn`, and `dqn` never imports `ui`, so the trainer runs without a
 display and the viewer can host any `obs -> action` callable.
 
-## References
-
-* Mnih, V. et al. (2015). Human-level control through deep reinforcement learning. *Nature* 518, 529-533.
-* Ng, A. Y., Harada, D., Russell, S. (1999). Policy invariance under reward transformations: theory and application to reward shaping. *ICML*.
-* van Hasselt, H., Guez, A., Silver, D. (2016). Deep reinforcement learning with double Q-learning. *AAAI*.
