@@ -1,0 +1,5 @@
+numpy>=1.26
+torch>=2.2          # CPU build is sufficient: pip install torch --index-url https://download.pytorch.org/whl/cpu
+pygame>=2.5         # ui/ and scripts/record.py only; lander/ and dqn/ never import it
+pillow>=10          # scripts/record.py (gif export)
+matplotlib>=3.8     # scripts/plot.py

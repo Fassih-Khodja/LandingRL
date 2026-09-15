@@ -1,0 +1,126 @@
+run dir: runs/dqn-v1
+Hyperparams(hidden_sizes=(128, 128), learning_rate=0.0005, gamma=0.99, buffer_size=100000, batch_size=64, learn_start=1000, train_every=4, target_update_every=1000, eps_start=1.0, eps_end=0.05, eps_decay_steps=50000, huber_delta=1.0, max_grad_norm=10.0, seed=0)
+
+ep     1 | steps  117 | ret  -146.59 | avg100  -146.59 | pad100 0.00 | eps 0.998 | loss       - | Q    0.01 | crashed        |      0s
+ep    10 | steps  121 | ret   -71.93 | avg100  -135.19 | pad100 0.00 | eps 0.979 | loss  1.2648 | Q   -0.09 | crashed        |      0s
+ep    20 | steps  135 | ret  -196.89 | avg100  -132.13 | pad100 0.00 | eps 0.956 | loss  0.6694 | Q    0.96 | crashed        |      0s
+ep    30 | steps  132 | ret  -184.71 | avg100  -135.02 | pad100 0.00 | eps 0.932 | loss   0.678 | Q    1.26 | crashed        |      1s
+ep    40 | steps  114 | ret   -73.87 | avg100  -132.25 | pad100 0.00 | eps 0.907 | loss  0.9756 | Q    5.72 | crashed        |      1s
+ep    50 | steps  148 | ret  -188.33 | avg100  -136.79 | pad100 0.00 | eps 0.880 | loss  0.6952 | Q    2.22 | crashed        |      2s
+   [eval @ 50] return  -193.11 (min -318 / max -138) | pad 0.00 | crash 1.00 | len 149
+ep    60 | steps  132 | ret   -86.48 | avg100  -138.61 | pad100 0.00 | eps 0.854 | loss  0.8594 | Q   10.77 | crashed        |      2s
+ep    70 | steps  204 | ret   -68.78 | avg100  -139.05 | pad100 0.00 | eps 0.822 | loss  0.4712 | Q    9.01 | crashed        |      2s
+ep    80 | steps  143 | ret  -103.55 | avg100  -137.46 | pad100 0.00 | eps 0.793 | loss   0.543 | Q    6.05 | crashed        |      3s
+ep    90 | steps  138 | ret  -137.78 | avg100  -136.82 | pad100 0.00 | eps 0.763 | loss  0.3865 | Q    6.98 | crashed        |      3s
+ep   100 | steps  177 | ret  -111.86 | avg100  -135.87 | pad100 0.00 | eps 0.730 | loss  0.6729 | Q    9.55 | crashed        |      4s
+   [eval @ 100] return  -131.76 (min -151 / max -114) | pad 0.00 | crash 0.00 | len 1000
+ep   110 | steps  155 | ret  -113.09 | avg100  -134.75 | pad100 0.00 | eps 0.696 | loss  0.6641 | Q   10.74 | crashed        |      5s
+ep   120 | steps  259 | ret   -92.70 | avg100  -132.99 | pad100 0.00 | eps 0.659 | loss  0.3765 | Q   12.02 | crashed        |      6s
+ep   130 | steps  160 | ret   -51.54 | avg100  -129.81 | pad100 0.00 | eps 0.625 | loss  0.3931 | Q   21.40 | crashed        |      6s
+ep   140 | steps  799 | ret    29.74 | avg100  -127.66 | pad100 0.00 | eps 0.551 | loss  0.4828 | Q   -7.75 | landed_off_pad |      7s
+ep   150 | steps  210 | ret  -102.29 | avg100  -111.04 | pad100 0.03 | eps 0.489 | loss  0.4102 | Q   12.41 | crashed        |      8s
+   [eval @ 150] return  -106.47 (min -135 / max -79) | pad 0.00 | crash 0.00 | len 1000
+ep   160 | steps  659 | ret    54.09 | avg100   -96.37 | pad100 0.05 | eps 0.360 | loss  0.3737 | Q    2.53 | landed_off_pad |     11s
+ep   170 | steps 1000 | ret  -106.93 | avg100   -89.50 | pad100 0.05 | eps 0.178 | loss  0.3549 | Q    9.84 | timeout        |     14s
+ep   180 | steps 1000 | ret  -129.04 | avg100   -86.77 | pad100 0.05 | eps 0.050 | loss  0.2614 | Q    9.66 | timeout        |     18s
+ep   190 | steps 1000 | ret   -81.07 | avg100   -83.32 | pad100 0.05 | eps 0.050 | loss  0.2438 | Q    2.85 | timeout        |     21s
+ep   200 | steps 1000 | ret   -40.10 | avg100   -78.01 | pad100 0.05 | eps 0.050 | loss  0.2458 | Q    9.40 | timeout        |     24s
+   [eval @ 200] return   -90.44 (min -193 / max -37) | pad 0.00 | crash 0.30 | len 819
+ep   210 | steps 1000 | ret   -69.80 | avg100   -75.46 | pad100 0.05 | eps 0.050 | loss  0.2215 | Q    5.68 | timeout        |     27s
+ep   220 | steps 1000 | ret   -30.47 | avg100   -70.50 | pad100 0.05 | eps 0.050 | loss  0.2347 | Q    8.85 | timeout        |     30s
+ep   230 | steps 1000 | ret   -11.70 | avg100   -58.74 | pad100 0.07 | eps 0.050 | loss  0.1828 | Q   11.92 | timeout        |     34s
+ep   240 | steps  734 | ret   165.31 | avg100   -44.25 | pad100 0.11 | eps 0.050 | loss  0.1863 | Q   15.10 | landed_on_pad  |     36s
+ep   250 | steps 1000 | ret   -42.86 | avg100   -38.79 | pad100 0.13 | eps 0.050 | loss  0.1528 | Q    7.83 | timeout        |     39s
+   [eval @ 250] return    10.30 (min -144 / max 174) | pad 0.30 | crash 0.10 | len 831
+ep   260 | steps  915 | ret  -224.53 | avg100   -42.83 | pad100 0.12 | eps 0.050 | loss  0.0644 | Q    8.91 | out_of_bounds  |     43s
+ep   270 | steps 1000 | ret  -102.65 | avg100   -41.15 | pad100 0.12 | eps 0.050 | loss  0.0885 | Q    6.79 | timeout        |     46s
+ep   280 | steps  556 | ret    42.85 | avg100   -35.81 | pad100 0.12 | eps 0.050 | loss   0.084 | Q   19.62 | landed_off_pad |     49s
+ep   290 | steps 1000 | ret   -73.27 | avg100   -30.41 | pad100 0.12 | eps 0.050 | loss  0.1082 | Q   32.35 | timeout        |     52s
+ep   300 | steps 1000 | ret  -114.88 | avg100   -27.04 | pad100 0.12 | eps 0.050 | loss  0.1053 | Q   -4.63 | timeout        |     55s
+   [eval @ 300] return   -91.67 (min -272 / max 19) | pad 0.00 | crash 0.30 | len 880
+ep   310 | steps 1000 | ret   -34.09 | avg100   -20.87 | pad100 0.12 | eps 0.050 | loss  0.1301 | Q    3.93 | timeout        |     58s
+ep   320 | steps  762 | ret   146.09 | avg100   -14.59 | pad100 0.14 | eps 0.050 | loss  0.1333 | Q    8.74 | landed_on_pad  |     61s
+ep   330 | steps 1000 | ret     3.85 | avg100   -13.04 | pad100 0.14 | eps 0.050 | loss  0.1868 | Q   27.36 | timeout        |     64s
+ep   340 | steps 1000 | ret   -21.45 | avg100   -19.43 | pad100 0.11 | eps 0.050 | loss  0.1937 | Q    7.72 | timeout        |     67s
+ep   350 | steps  407 | ret   129.46 | avg100   -17.76 | pad100 0.10 | eps 0.050 | loss  0.1552 | Q   21.91 | landed_off_pad |     69s
+   [eval @ 350] return    39.52 (min -180 / max 231) | pad 0.30 | crash 0.10 | len 799
+ep   360 | steps  754 | ret   157.20 | avg100     0.29 | pad100 0.16 | eps 0.050 | loss  0.1753 | Q   12.12 | landed_on_pad  |     72s
+ep   370 | steps  572 | ret   176.41 | avg100    17.44 | pad100 0.23 | eps 0.050 | loss  0.1577 | Q   19.11 | landed_on_pad  |     74s
+ep   380 | steps  991 | ret    26.99 | avg100    29.07 | pad100 0.27 | eps 0.050 | loss  0.1903 | Q    2.84 | landed_off_pad |     76s
+ep   390 | steps 1000 | ret    -1.45 | avg100    39.09 | pad100 0.30 | eps 0.050 | loss  0.1829 | Q    8.88 | timeout        |     79s
+ep   400 | steps  536 | ret   213.06 | avg100    57.99 | pad100 0.37 | eps 0.050 | loss  0.2761 | Q   19.68 | landed_on_pad  |     81s
+   [eval @ 400] return    50.34 (min -203 / max 239) | pad 0.30 | crash 0.10 | len 798
+ep   410 | steps  640 | ret   174.86 | avg100    73.52 | pad100 0.44 | eps 0.050 | loss  0.2032 | Q   11.84 | landed_on_pad  |     84s
+ep   420 | steps  771 | ret   146.92 | avg100    87.96 | pad100 0.50 | eps 0.050 | loss  0.2862 | Q    9.37 | landed_on_pad  |     86s
+ep   430 | steps  578 | ret   185.53 | avg100   103.07 | pad100 0.56 | eps 0.050 | loss  0.2581 | Q   13.93 | landed_on_pad  |     88s
+ep   440 | steps  419 | ret   134.81 | avg100   120.61 | pad100 0.62 | eps 0.050 | loss  0.2975 | Q   18.42 | landed_off_pad |     90s
+ep   450 | steps  601 | ret    87.57 | avg100   127.90 | pad100 0.65 | eps 0.050 | loss  0.2333 | Q   12.71 | landed_off_pad |     92s
+   [eval @ 450] return   120.72 (min 29 / max 194) | pad 0.50 | crash 0.00 | len 704
+ep   460 | steps  315 | ret   224.20 | avg100   134.51 | pad100 0.68 | eps 0.050 | loss  0.2343 | Q   26.52 | landed_on_pad  |     94s
+ep   470 | steps  668 | ret    76.77 | avg100   136.86 | pad100 0.65 | eps 0.050 | loss  0.2003 | Q   11.39 | landed_off_pad |     95s
+ep   480 | steps  391 | ret   113.01 | avg100   144.37 | pad100 0.66 | eps 0.050 | loss  0.2681 | Q   19.34 | landed_off_pad |     97s
+ep   490 | steps  519 | ret    92.23 | avg100   145.85 | pad100 0.65 | eps 0.050 | loss  0.2087 | Q   13.09 | landed_off_pad |     99s
+ep   500 | steps  656 | ret    77.51 | avg100   145.53 | pad100 0.61 | eps 0.050 | loss  0.2113 | Q   10.00 | landed_off_pad |    101s
+   [eval @ 500] return   144.10 (min 93 / max 223) | pad 0.30 | crash 0.00 | len 477
+ep   510 | steps  598 | ret   181.53 | avg100   147.19 | pad100 0.60 | eps 0.050 | loss  0.2119 | Q   16.04 | landed_on_pad  |    103s
+ep   520 | steps  457 | ret   139.68 | avg100   145.34 | pad100 0.57 | eps 0.050 | loss  0.3518 | Q   21.50 | landed_off_pad |    104s
+ep   530 | steps  399 | ret   199.48 | avg100   143.08 | pad100 0.57 | eps 0.050 | loss  0.2093 | Q   18.94 | landed_on_pad  |    106s
+ep   540 | steps  565 | ret   103.67 | avg100   144.80 | pad100 0.56 | eps 0.050 | loss  0.2979 | Q   13.52 | landed_off_pad |    108s
+ep   550 | steps  417 | ret   207.64 | avg100   140.37 | pad100 0.55 | eps 0.050 | loss  0.2874 | Q   18.17 | landed_on_pad  |    110s
+   [eval @ 550] return   148.44 (min -21 / max 229) | pad 0.60 | crash 0.00 | len 556
+ep   560 | steps  349 | ret   203.99 | avg100   136.93 | pad100 0.52 | eps 0.050 | loss  0.3181 | Q   21.25 | landed_on_pad  |    112s
+ep   570 | steps  337 | ret   222.05 | avg100   143.04 | pad100 0.56 | eps 0.050 | loss  0.2738 | Q   19.74 | landed_on_pad  |    113s
+ep   580 | steps  325 | ret   221.30 | avg100   148.88 | pad100 0.59 | eps 0.050 | loss  0.2585 | Q   25.96 | landed_on_pad  |    114s
+ep   590 | steps  339 | ret   212.12 | avg100   160.21 | pad100 0.64 | eps 0.050 | loss  0.1974 | Q   22.99 | landed_on_pad  |    116s
+ep   600 | steps  304 | ret   141.15 | avg100   163.82 | pad100 0.68 | eps 0.050 | loss  0.1703 | Q   26.54 | landed_off_pad |    117s
+   [eval @ 600] return    89.26 (min -41 / max 239) | pad 0.40 | crash 0.00 | len 698
+ep   610 | steps  893 | ret    -9.68 | avg100   167.11 | pad100 0.68 | eps 0.050 | loss   0.246 | Q    4.70 | landed_off_pad |    120s
+ep   620 | steps 1000 | ret   -36.74 | avg100   169.39 | pad100 0.69 | eps 0.050 | loss  0.3251 | Q    1.55 | timeout        |    122s
+ep   630 | steps  425 | ret   108.00 | avg100   167.14 | pad100 0.65 | eps 0.050 | loss  0.2954 | Q   17.64 | landed_off_pad |    123s
+ep   640 | steps 1000 | ret  -115.00 | avg100   160.23 | pad100 0.64 | eps 0.050 | loss   0.246 | Q    2.27 | timeout        |    125s
+ep   650 | steps 1000 | ret   -30.98 | avg100   163.59 | pad100 0.63 | eps 0.050 | loss  0.3019 | Q   -1.07 | timeout        |    127s
+   [eval @ 650] return    17.14 (min -53 / max 149) | pad 0.00 | crash 0.00 | len 794
+ep   660 | steps 1000 | ret   -55.91 | avg100   157.21 | pad100 0.60 | eps 0.050 | loss  0.2998 | Q    0.08 | timeout        |    130s
+ep   670 | steps 1000 | ret   -48.83 | avg100   139.32 | pad100 0.53 | eps 0.050 | loss  0.2245 | Q   -1.23 | timeout        |    132s
+ep   680 | steps 1000 | ret   -60.78 | avg100   118.43 | pad100 0.46 | eps 0.050 | loss  0.2733 | Q    1.77 | timeout        |    135s
+ep   690 | steps  315 | ret   216.12 | avg100   115.88 | pad100 0.45 | eps 0.050 | loss   0.245 | Q   30.03 | landed_on_pad  |    137s
+ep   700 | steps  488 | ret   106.47 | avg100   109.43 | pad100 0.43 | eps 0.050 | loss  0.2742 | Q   16.10 | landed_off_pad |    139s
+   [eval @ 700] return    73.22 (min -95 / max 237) | pad 0.40 | crash 0.00 | len 684
+ep   710 | steps 1000 | ret   -61.61 | avg100   106.54 | pad100 0.44 | eps 0.050 | loss  0.2587 | Q   -2.63 | timeout        |    141s
+ep   720 | steps  455 | ret   104.25 | avg100   101.90 | pad100 0.44 | eps 0.050 | loss  0.3082 | Q   14.28 | landed_off_pad |    143s
+ep   730 | steps  365 | ret   210.19 | avg100   108.34 | pad100 0.48 | eps 0.050 | loss  0.1653 | Q   19.87 | landed_on_pad  |    144s
+ep   740 | steps  350 | ret   232.01 | avg100   119.44 | pad100 0.53 | eps 0.050 | loss  0.2451 | Q   27.08 | landed_on_pad  |    146s
+ep   750 | steps  393 | ret   134.43 | avg100   121.19 | pad100 0.53 | eps 0.050 | loss  0.2365 | Q   19.72 | landed_off_pad |    147s
+   [eval @ 750] return   155.23 (min -18 / max 243) | pad 0.70 | crash 0.00 | len 568
+ep   760 | steps  479 | ret   202.34 | avg100   128.71 | pad100 0.55 | eps 0.050 | loss  0.2316 | Q   20.03 | landed_on_pad  |    149s
+ep   770 | steps  356 | ret   216.02 | avg100   147.60 | pad100 0.62 | eps 0.050 | loss  0.3598 | Q   20.24 | landed_on_pad  |    150s
+ep   780 | steps  364 | ret   138.56 | avg100   166.04 | pad100 0.67 | eps 0.050 | loss  0.3078 | Q   23.60 | landed_off_pad |    151s
+ep   790 | steps  375 | ret   131.78 | avg100   166.87 | pad100 0.65 | eps 0.050 | loss  0.1874 | Q   24.70 | landed_off_pad |    152s
+ep   800 | steps  297 | ret   242.45 | avg100   175.77 | pad100 0.68 | eps 0.050 | loss  0.2238 | Q   27.97 | landed_on_pad  |    154s
+   [eval @ 800] return   144.98 (min -14 / max 246) | pad 0.60 | crash 0.00 | len 577
+ep   810 | steps  275 | ret   236.10 | avg100   179.76 | pad100 0.69 | eps 0.050 | loss  0.1197 | Q   29.02 | landed_on_pad  |    156s
+ep   820 | steps  570 | ret   120.59 | avg100   189.61 | pad100 0.70 | eps 0.050 | loss  0.2966 | Q   11.10 | landed_off_pad |    156s
+ep   830 | steps  275 | ret   155.65 | avg100   186.87 | pad100 0.68 | eps 0.050 | loss  0.2779 | Q   35.47 | landed_off_pad |    158s
+ep   840 | steps  294 | ret   225.72 | avg100   181.47 | pad100 0.64 | eps 0.050 | loss  0.2317 | Q   25.19 | landed_on_pad  |    160s
+ep   850 | steps  270 | ret   219.86 | avg100   184.13 | pad100 0.67 | eps 0.050 | loss  0.3206 | Q   29.33 | landed_on_pad  |    161s
+   [eval @ 850] return    93.20 (min -76 / max 234) | pad 0.50 | crash 0.00 | len 704
+ep   860 | steps  515 | ret   101.24 | avg100   182.15 | pad100 0.66 | eps 0.050 | loss  0.4027 | Q   11.79 | landed_off_pad |    163s
+ep   870 | steps  228 | ret   258.15 | avg100   180.68 | pad100 0.65 | eps 0.050 | loss   0.287 | Q   41.37 | landed_on_pad  |    164s
+ep   880 | steps  259 | ret   245.98 | avg100   180.74 | pad100 0.66 | eps 0.050 | loss  0.2687 | Q   32.00 | landed_on_pad  |    166s
+ep   890 | steps  298 | ret   240.06 | avg100   183.81 | pad100 0.70 | eps 0.050 | loss  0.2896 | Q   30.94 | landed_on_pad  |    167s
+ep   900 | steps  301 | ret   235.52 | avg100   180.94 | pad100 0.68 | eps 0.050 | loss  0.2844 | Q   26.17 | landed_on_pad  |    169s
+   [eval @ 900] return   138.30 (min -12 / max 244) | pad 0.30 | crash 0.00 | len 514
+ep   910 | steps  479 | ret   187.31 | avg100   184.68 | pad100 0.69 | eps 0.050 | loss  0.2569 | Q   11.99 | landed_on_pad  |    170s
+ep   920 | steps  375 | ret   223.17 | avg100   186.22 | pad100 0.71 | eps 0.050 | loss  0.3752 | Q   23.56 | landed_on_pad  |    171s
+ep   930 | steps  413 | ret   138.30 | avg100   183.55 | pad100 0.71 | eps 0.050 | loss   0.362 | Q   21.40 | landed_off_pad |    173s
+ep   940 | steps  428 | ret   219.47 | avg100   187.89 | pad100 0.73 | eps 0.050 | loss  0.3094 | Q   20.72 | landed_on_pad  |    175s
+ep   950 | steps  434 | ret   223.99 | avg100   181.99 | pad100 0.70 | eps 0.050 | loss  0.2636 | Q   21.26 | landed_on_pad  |    177s
+   [eval @ 950] return   191.43 (min 111 / max 246) | pad 0.60 | crash 0.00 | len 379
+ep   960 | steps  430 | ret   208.29 | avg100   186.70 | pad100 0.73 | eps 0.050 | loss  0.1852 | Q   18.16 | landed_on_pad  |    178s
+ep   970 | steps  479 | ret   197.67 | avg100   184.88 | pad100 0.73 | eps 0.050 | loss   0.259 | Q   11.08 | landed_on_pad  |    180s
+ep   980 | steps  347 | ret   125.31 | avg100   184.35 | pad100 0.71 | eps 0.050 | loss  0.2875 | Q   21.18 | landed_off_pad |    181s
+ep   990 | steps  302 | ret   143.43 | avg100   183.29 | pad100 0.69 | eps 0.050 | loss  0.2816 | Q   31.14 | landed_off_pad |    182s
+ep  1000 | steps  279 | ret   229.37 | avg100   185.82 | pad100 0.70 | eps 0.050 | loss  0.2854 | Q   32.98 | landed_on_pad  |    183s
+   [eval @ 1000] return   129.71 (min -44 / max 241) | pad 0.40 | crash 0.00 | len 532
+
+done in 184s. best eval return 191.43. watch with:  python play.py --checkpoint runs/dqn-v1/checkpoints/best.pt
